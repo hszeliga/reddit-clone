@@ -41,7 +41,7 @@ export default function Register(){
                         <button className="bg-indigo-700 text-white uppercase px-4 py-2 text-sm">Login</button>
                         </div>
                           <div className="pt-6 text-center text-gray-700">
-                            Don't have an account?&nbsp;
+                            Don't have an account?
                             <Link href="/register"><a className="text-indigo-700 hover:underline">Register</a></Link>
                         </div>
                         </div>
