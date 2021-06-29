@@ -20,7 +20,6 @@ export default function New() {
 
   async function handleSumbit(e){
     e.preventDefault();
-
     try {
       await createPost({
         variables: {
