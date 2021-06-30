@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {auth} from "utils/nhost";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Title } from "components/layout";
+import { Layout2 } from "components/layout";
 import Head from 'next/head';
 
 export default function Register(){
@@ -20,7 +20,7 @@ export default function Register(){
         router.push("/");
     }
     return( 
-        <Title>
+        <Layout2>
             <Head>
                 <title>Reddit clone - register</title>
             </Head>
@@ -53,6 +53,6 @@ export default function Register(){
                         </div>
                     </form>
             </div>
-            </Title>
+            </Layout2>
     );
 }

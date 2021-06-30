@@ -74,6 +74,14 @@ export function Header(){
     );
 }
 
+export function Header2(){
+    return(
+        <div className="flex items-center justify-between bg-indigo-700 text-white p-4">
+            <div className="flex items-center px-4"><Link href="/"><a><SvgLogo /></a></Link><div className="px-4"><Link href="/"><a>Reddit clone</a></Link></div></div>
+        </div>
+    );
+}
+
 export function Main({children}){
     return <div className="container mx-auto">{children}</div>;
 }
@@ -89,12 +97,13 @@ export function Layout ({children}){
     ); 
 }
 
-export function Title({children}){
+export function Layout2({children}){
     return(
         <div>
             <Head>
                 <title>Reddit clone</title>
             </Head>
+            <Header2 />
             {children}
         </div>
     ); 
