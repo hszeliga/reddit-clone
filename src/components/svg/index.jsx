@@ -5,5 +5,6 @@ import { SvgDelete } from "./delete";
 import { SvgLogout } from "./logout";
 import { SvgAvatar } from "./avatar";
 import { SvgCreate } from "./create";
+import { SvgLogo } from "./logo";
 
-export {SvgArrowUp, SvgArrowDown, SvgEdit, SvgDelete, SvgLogout, SvgAvatar, SvgCreate};
+export {SvgArrowUp, SvgArrowDown, SvgEdit, SvgDelete, SvgLogout, SvgAvatar, SvgCreate, SvgLogo};

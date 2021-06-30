@@ -5,7 +5,7 @@ import { useAuth } from "@nhost/react-auth";
 import Link from "next/link";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/client";
-import { SvgLogout, SvgAvatar, SvgCreate } from "components/svg";
+import { SvgLogout, SvgAvatar, SvgCreate, SvgLogo } from "components/svg";
 
 
 const GET_USER_DATA = gql`
@@ -54,7 +54,7 @@ export function Header(){
     const { signedIn } = useAuth();
     return(
         <div className="flex items-center justify-between bg-indigo-700 text-white p-4">
-            <div><Link href="/"><a>Reddit clone</a></Link></div>
+            <div className="flex items-center px-4"><Link href="/"><a><SvgLogo /></a></Link><div className="px-4"><Link href="/"><a>Reddit clone</a></Link></div></div>
             <div className="flex items-center">
                 {signedIn && <div className="px-6"><Link href="/new"><a><SvgCreate className="w-6 h-6" /></a></Link></div>}
                 <div>
