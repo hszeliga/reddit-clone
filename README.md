@@ -1,4 +1,4 @@
-Fullstack reddit clone
+# Fullstack reddit clone
 
 Used technologies: 
 - NextJS 
