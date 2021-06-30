@@ -1,10 +1,12 @@
 import React, {useState} from "react";
 import {auth} from "utils/nhost";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Register(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const router = useRouter();
 
     async function handleSubmit(e){
         e.preventDefault();
@@ -13,7 +15,7 @@ export default function Register(){
         } catch (error) {
             return alert("Register failed");
         }
-        alert("Registration successful");
+        router.push("/");
     }
     return( 
             <div className="flex flex-col max-w-xl mx-auto shadow p-4 my-12">
