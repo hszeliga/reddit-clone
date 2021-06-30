@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import gql from "graphql-tag";
 import { useQuery, useMutation } from "@apollo/client";
 import { Layout, Main } from "components/layout";
+import Head from 'next/head';
 
 const GET_POST = gql`
 query getPost($post_id: uuid!) {
@@ -53,6 +54,9 @@ function EditPost({post}){
 
     return (
         <Layout>
+        <Head>
+          <title>Reddit clone - edit post</title>
+        </Head>
         <Main>
             <form onSubmit={handleSubmit}>
             <div className="py-2">

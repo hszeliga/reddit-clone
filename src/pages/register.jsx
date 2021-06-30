@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import {auth} from "utils/nhost";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { Title } from "components/layout";
+import Head from 'next/head';
 
 export default function Register(){
     const [email, setEmail] = useState("");
@@ -18,6 +20,10 @@ export default function Register(){
         router.push("/");
     }
     return( 
+        <Title>
+            <Head>
+                <title>Reddit clone - register</title>
+            </Head>
             <div className="flex flex-col max-w-xl mx-auto shadow p-4 my-12">
                 <div className="text-center uppercase text-gray-700 pb-4">Register</div>
                     <form onSubmit={handleSubmit}> 
@@ -47,5 +53,6 @@ export default function Register(){
                         </div>
                     </form>
             </div>
+            </Title>
     );
 }

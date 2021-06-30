@@ -6,6 +6,8 @@ import Link from "next/link";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/client";
 import { SvgLogout, SvgAvatar, SvgCreate, SvgLogo } from "components/svg";
+import Head from 'next/head';
+
 
 
 const GET_USER_DATA = gql`
@@ -77,8 +79,22 @@ export function Main({children}){
 }
 export function Layout ({children}){
     return(
-        <div >
+        <div>
+            <Head>
+                <title>Reddit clone</title>
+            </Head>
             <Header />
+            {children}
+        </div>
+    ); 
+}
+
+export function Title({children}){
+    return(
+        <div>
+            <Head>
+                <title>Reddit clone</title>
+            </Head>
             {children}
         </div>
     ); 

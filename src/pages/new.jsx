@@ -3,6 +3,7 @@ import { Layout, Main } from "components/layout";
 import gql from "graphql-tag";
 import { useMutation } from "@apollo/client";
 import { useRouter } from "next/router";
+import Head from 'next/head';
 
 const INSERT_POST = gql`
 mutation insertPost($post: posts_insert_input!){
@@ -40,6 +41,9 @@ export default function New() {
 
   return(
     <Layout>
+      <Head>
+          <title>Reddit clone - create post</title>
+        </Head>
       <Main>
         <form onSubmit={handleSumbit}>
           <div className="py-2">
