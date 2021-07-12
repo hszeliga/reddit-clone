@@ -9,5 +9,3 @@ Used technologies:
 - Nhost
 - PostgreSQL
 - Hasura
-
-https://hszeligareddit.vercel.app
