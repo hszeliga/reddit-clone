@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.3.20",
-    "@nhost/react-apollo": "^1.1.2",
+    "@nhost/react-apollo": "^3.0.0",
     "@nhost/react-auth": "^1.0.5",
     "classnames": "^2.3.1",
     "graphql": "^15.5.1",
